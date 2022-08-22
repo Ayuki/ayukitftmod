@@ -4,7 +4,7 @@ Skin Changer Tool for Teamfight Tactics.
 
 # Usage
 
-Install DLL Injector for Free
+Install Any DLL Injector
 
 Inject Ayuki.dll to League of Legends.exe
 
