@@ -16,7 +16,6 @@ inline void footer() noexcept
 {
 	ImGui::Separator();
 	ImGui::textUnformattedCentered("github.com/Ayuki");
-	ImGui::textUnformattedCentered("ich bin high' Ayuki 2022");
 }
 
 void GUI::render() noexcept
@@ -36,7 +35,7 @@ void GUI::render() noexcept
 			player->changeSkin(cheatManager.database->pets[cheatManager.config->currentComboSkinIndex - 1].modelName.c_str(), cheatManager.config->curretSkinId);
 	});
 
-	ImGui::Begin("github.com/Ayuki #freedeha", nullptr, ImGuiWindowFlags_NoCollapse | ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoScrollbar | ImGuiWindowFlags_NoScrollWithMouse | ImGuiWindowFlags_AlwaysAutoResize);
+	ImGui::Begin("github.com/Ayuki", nullptr, ImGuiWindowFlags_NoCollapse | ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoScrollbar | ImGuiWindowFlags_NoScrollWithMouse | ImGuiWindowFlags_AlwaysAutoResize);
 	if (ImGui::BeginTabBar("TabBar", ImGuiTabBarFlags_Reorderable | ImGuiTabBarFlags_FittingPolicyScroll | ImGuiTabBarFlags_NoTooltip)) {
 		if (ImGui::BeginTabItem("Skin Changer")) {
 			if (ImGui::Combo("Current Pet", &cheatManager.config->currentComboSkinIndex, vectorGetter, static_cast<void*>(&cheatManager.database->pets), cheatManager.database->pets.size() + 1))
