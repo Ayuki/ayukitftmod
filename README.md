@@ -1,4 +1,4 @@
-# Ayuki1
+# AyukiMod
 
 Skin Changer Tool for Teamfight Tactics.
 
